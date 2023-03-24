@@ -2,7 +2,7 @@ import { ChatGPTAPI } from 'chatgpt';
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 const express = require('express');
-const cors = requrire('cors');
+const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 3002;
 const OPENAI_API_KEY = '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';
