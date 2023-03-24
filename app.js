@@ -8,6 +8,7 @@ const port = process.env.PORT || 3002;
 const OPENAI_API_KEY = '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';
 
 app.use(cors());
+app.use(express.json());
 app.get('/', (req, res) => res.send('still success'));
 app.post('/find', async (req, res) => {
     const api = new ChatGPTAPI({
